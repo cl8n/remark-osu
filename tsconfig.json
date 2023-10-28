@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"exactOptionalPropertyTypes": true,
+		"lib": ["ES2021"],
+		"module": "Node16",
+		"outDir": "build",
+		"rootDir": "src",
+		"strict": true,
+		"target": "ES2021",
+	},
+}

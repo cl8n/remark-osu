@@ -1,0 +1,50 @@
+{
+	"name": "remark-osu",
+	"version": "0.1.0",
+	"author": "clayton <me@clayton.cc>",
+	"bugs": "https://github.com/cl8n/remark-osu/issues",
+	"description": "Remark plugins emulating osu!'s markdown extensions and formatting rules",
+	"keywords": [
+		"markdown",
+		"osu",
+		"osu-wiki",
+		"osu!",
+		"osu! wiki",
+		"remark",
+		"remark-lint"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cl8n/remark-osu.git"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"exports": {
+		"./*": "./build/*.js"
+	},
+	"files": [
+		"build"
+	],
+	"scripts": {
+		"build": "rimraf build && tsc",
+		"prepublishOnly": "npm run build"
+	},
+	"sideEffects": false,
+	"type": "module",
+	"dependencies": {
+		"unified-lint-rule": "^2.1.2",
+		"unist-util-position": "^5.0.0",
+		"unist-util-visit": "^5.0.0"
+	},
+	"devDependencies": {
+		"@types/mdast": "^4.0.2",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.2.2"
+	},
+	"overrides": {
+		"@types/mdast": {
+			"@types/unist": "^2.0.9"
+		}
+	}
+}
