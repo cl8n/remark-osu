@@ -1,6 +1,6 @@
 {
 	"name": "remark-osu",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"author": "clayton <me@clayton.cc>",
 	"bugs": "https://github.com/cl8n/remark-osu/issues",
 	"description": "Remark plugins emulating osu!'s markdown extensions and formatting rules",
